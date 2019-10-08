@@ -4,4 +4,4 @@
 vendor/**   -text=auto
 # Diffs on these files are meaningless
 *.svg           -diff
-lib/auto/gui.files.go filter=lfs diff=lfs merge=lfs -text
+lib/auto/gui.files.go filter=lfs diff=lfs merge=lfs -text export-ignore
