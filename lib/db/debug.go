@@ -24,3 +24,8 @@ func init() {
 func shouldDebug() bool {
 	return l.ShouldDebug("db")
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n logger.Logger) {
+	l = n
+}

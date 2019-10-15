@@ -20,3 +20,8 @@ var (
 func init() {
 	l.SetDebug("nat", strings.Contains(os.Getenv("STTRACE"), "nat") || os.Getenv("STTRACE") == "all")
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n logger.Logger) {
+	l = n
+}

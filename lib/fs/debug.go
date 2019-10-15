@@ -27,3 +27,8 @@ func init() {
 		l.SetDebug("fs", true)
 	}
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n logger.Logger) {
+	l = n
+}

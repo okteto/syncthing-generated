@@ -41,3 +41,8 @@ func init() {
 		useDeadlock = true
 	}
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n logger.Logger) {
+	l = n
+}

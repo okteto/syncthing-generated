@@ -20,3 +20,8 @@ var (
 func init() {
 	dl.SetDebug("events", strings.Contains(os.Getenv("STTRACE"), "events") || os.Getenv("STTRACE") == "all")
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n liblogger.Logger) {
+	dl = n
+}

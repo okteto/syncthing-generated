@@ -72,6 +72,7 @@ func New() Logger {
 		// benchmarks.
 		return newLogger(ioutil.Discard)
 	}
+
 	return newLogger(controlStripper{os.Stdout})
 }
 

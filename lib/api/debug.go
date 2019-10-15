@@ -26,3 +26,8 @@ func init() {
 	// https://github.com/syncthing/syncthing/pull/5548
 	l.SetDebug("api", strings.Contains(os.Getenv("STTRACE"), "api") || strings.Contains(os.Getenv("STTRACE"), "http") || os.Getenv("STTRACE") == "all")
 }
+
+// SetLogger overrides the existing logger
+func SetLogger(n logger.Logger) {
+	l = n
+}
